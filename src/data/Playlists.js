@@ -444,5 +444,6 @@ export const arrThemes = [
       }
     ]
   },
+ ]
   
  
