@@ -1,0 +1,108 @@
+.Burger-Button {
+  z-index: 100;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  height: 3rem;
+  transform: rotate(30deg);
+  transition: transform 0.3s;
+}
+
+.Burger-Button:hover {
+  cursor: pointer;
+  transform: rotate(210deg);
+  transition: transform 0.3s;
+}
+
+.Burger-Button:active {
+  transform: rotate(210deg) translateY(-1px);
+  transition: transform 0.1s;
+}
+
+.Burger-Div {
+  z-index: 99;
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.3s;
+}
+
+.Burger-Div-Hidden {
+  transition: 0.3s;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 0vw;
+}
+
+.Burger-Div-Content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.Burger-Div-Content-Hidden {
+  display: none;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.Burger-Div-Content a {
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration-line: none;
+  color: white;
+  transition: 0.2s;
+  display: flex;
+  justify-content: center;
+}
+
+.Burger-Div-Content a:hover {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-decoration-line: none;
+  color: white;
+  background: rgba(0, 0, 0, 1);
+  transition: 0.2s;
+}
+
+.Burger-Div-Content-Link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+  min-width: 200px;
+}
+
+.Burger-Link:hover .Burger-Bullet {
+  transform: translateX(2rem);
+  transition: 0.4s;
+}
+
+.Burger-Div-Content-Link span {
+  text-align: right;
+}
+
+.Burger-Bullet {
+  height: 2rem;
+  transition: 0.2s;
+}

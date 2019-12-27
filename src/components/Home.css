@@ -1,0 +1,29 @@
+.home {
+  background-image: url('../assets/img/bg_color.png');
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.home-nickname-play {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-height: 500px) {
+  .home {
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+  .home-nickname-play {
+    margin: auto auto 15vh auto;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  .home {
+    padding-bottom: 70px;
+  }
+}

@@ -1,0 +1,48 @@
+.score-tracks-number,
+.ball {
+  font-family: 'Ultra', regular;
+  color: #6c9caf;
+}
+
+.ball {
+  margin: 1px auto;
+  width: 20%;
+  min-width: 300px;
+}
+
+.spring {
+  animation: spring 2s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+.score-tracks-number {
+  margin-top: 2%;
+}
+
+.white-turn {
+  color: white;
+}
+
+.label-score {
+  color: lightgrey;
+  margin-right: 10px;
+}
+
+@keyframes spring {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  10% {
+    transform: scale(3);
+  }
+  30% {
+    transform: scale(0.8, 1.1) translateY(-50px);
+  }
+  50% {
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,6 @@
+h1 {
+  font-family: 'Ultra', regular;
+  color: #232524;
+  font-size: calc(30px + (26 - 14) * ((100vw - 300px) / (800 - 300)));
+  font-weight: 1;
+}

@@ -1,0 +1,154 @@
+.Main-Highscores {
+  min-height: 100vh;
+  background-image: url('https://www.bibleclipart.net/images/wood-panel-hd-background.jpg');
+  filter: grayscale(0.5);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main-Paper {
+  display: none;
+  min-height: 90vh;
+  min-width: 90%;
+  background-image: url('https://img.pngio.com/hd-old-parchment-paper-png-picture-free-library-png-old-paper-parchment-paper-png-3945_3832.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.Score-Div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  max-width: 500px;
+  color: black;
+  font-family: 'Ultra', regular;
+  font-size: calc(0.5rem + 2vh);
+  display: none;
+}
+
+.Score-Title {
+  margin: 1rem;
+  font-weight: normal;
+}
+
+.Score-List {
+  list-style: none;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.Score-List-Element {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nail {
+  display: none;
+  height: 4rem;
+  width: 4rem;
+  background-image: url('https://phdoordecor.com/wp-content/uploads/2019/01/2018_Nov_PHDoorDecor_R2_Website-1-300x300.png');
+  background-size: 100% 100%;
+}
+
+.nail-ul {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.nail-ur {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.nail-dl {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.nail-dr {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+@keyframes paper {
+  0% {
+    opacity: 0;
+    transform: scale(2);
+  }
+
+  97% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  98% {
+    transform: rotate(1deg) translateX(2px) translateY(1px);
+  }
+  99% {
+    transform: rotate(-2deg) translateX(-1px) translateY(-1px);
+  }
+  100% {
+    transform: rotate(0deg) translateX(2px) translateY(0px);
+  }
+}
+
+@keyframes nailed {
+  0% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  51% {
+    transform: rotate(1deg) translateX(2px) translateY(3px);
+  }
+  52% {
+    transform: rotate(-1deg) translateX(-1px) translateY(1px);
+  }
+  53% {
+    transform: rotate(0deg) translateX(1px) translateY(2px);
+  }
+  54% {
+    transform: rotate(0deg) translateX(0px) translateY(0px);
+  }
+}
+
+.end-game-button {
+  color: rgb(218, 98, 1);
+  border: solid 2px rgb(218, 98, 1);
+  background-color: black;
+  border-radius: 20px;
+  padding: 15px;
+  width: 100px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.end-game-button:hover {
+  cursor: pointer;
+  color: white;
+  border: solid 2px white;
+  box-shadow: 2px 2px 10px black;
+}
+
+.end-game-button:active {
+  cursor: pointer;
+  color: white;
+  border: solid 2px white;
+  box-shadow: none;
+}

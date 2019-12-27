@@ -1,0 +1,41 @@
+.playBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid#2bb542;
+  background: black;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.swal2-success-line-tip {
+  top: 1.7em;
+  left: 0.43em;
+  width: 1em;
+  transform: rotate(45deg);
+  display: block;
+  position: relative;
+  z-index: 2;
+  height: 0.3125em;
+  border-radius: 0.125em;
+  background-color: #2bb542;
+}
+
+.swal2-success-line-long {
+  top: 1em;
+  right: -0.9em;
+  width: 1.7em;
+  transform: rotate(-45deg);
+  position: relative;
+  z-index: 2;
+  height: 0.4em;
+  border-radius: 0.125em;
+  background-color: #2bb542;
+}
+
+.bam {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+}

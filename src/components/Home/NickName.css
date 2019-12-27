@@ -1,0 +1,29 @@
+form,
+.NickName {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#name {
+  background: transparent;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: calc(1.4rem + 0.3vh);
+  font-weight: 150;
+}
+
+.NickName {
+  background: transparent;
+  outline: none;
+  border: solid 0 black;
+  border-bottom: dashed 4px #232524;
+  max-width: calc(150px + 15vw);
+  padding: 5px 0px;
+  text-align: center;
+  font-size: calc(1rem + 1.5vw);
+  color: white;
+  margin: 20px auto;
+}
+
+.NickName::placeholder {
+  color: lightgrey;
+}
